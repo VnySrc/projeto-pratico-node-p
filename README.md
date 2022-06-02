@@ -19,3 +19,7 @@ PORT=3001 <br />
 ***Inicializar CLient: npm run dev*** <br />
 ***acessar 127.0.0.1:3000*** <br />
 
+
+*Rotas API*
+Documentação da API
+**www**
