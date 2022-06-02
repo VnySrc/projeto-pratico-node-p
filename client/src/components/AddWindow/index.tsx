@@ -48,7 +48,7 @@ export const AddWindow = ({action, fnAdd}) => {
                )
            })}
             <C.actionsContainer>
-                <i onClick={addInput}><FontAwesomeIcon icon={faCirclePlus}/> Novo Beneficiario </i>
+                <i onClick={addInput}><FontAwesomeIcon icon={faCirclePlus}/> Novo Beneficiário </i>
                 <button onClick={() => {fnAdd(quantity, beneficiaries)}}>Confirmar</button>
             </C.actionsContainer>
         </C.mainContainer> 

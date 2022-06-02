@@ -4,10 +4,11 @@ export const mainContainer = styled.div`
 margin: auto;
 text-align: center;
 align-items: center;
-margin-left: 42%;
+margin-left: 110px;
 position: fixed;
 bottom: 10px;
 z-index: 0;
+
 
 button {
     background-color: black;
@@ -17,6 +18,7 @@ button {
     border-radius: 17px;
     cursor: pointer;
     transition: 0.5s;
+    text-align: left;
     :hover {
         transform: scale(1.1);
        
@@ -24,4 +26,12 @@ button {
         transition: 0.5s;
     }
 }
+`
+
+export const buttonAdd = styled.button`
+float: left;
+
+`
+export const buttonClear = styled.button`
+margin-left: 410px;
 `

@@ -14,7 +14,7 @@ export const Header = () => {
             <C.mainContainer>
                 <C.navItems>
                         <i><FontAwesomeIcon icon={faBars} /></i>
-                        <h3>Clients Dashboard </h3>
+                        <h3>Planos Dashboard </h3>
                         <C.userActions>
                             <p onClick={logout}>Logout</p>
                         </C.userActions>

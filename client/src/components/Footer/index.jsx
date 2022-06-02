@@ -1,9 +1,10 @@
 import * as C from "./styled"
 
-export const Footer = ({action}) => {
+export const Footer = ({action, clean}) => {
     return (
         <C.mainContainer>
-            <button onClick={action}>Adicionar Cliente</button>
+            <C.buttonAdd onClick={action}>Adicionar Dados</C.buttonAdd>
+            <C.buttonClear onClick={clean}> Limpar </C.buttonClear>
         </C.mainContainer>
     )
 }
