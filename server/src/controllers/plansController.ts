@@ -27,21 +27,15 @@ class plansController {
     }
 
     async getProposal (req: Request, res: Response, next: NextFunction) {
-        try {
-            const response = await plansService.getProposalService()
-            if (response instanceof Error) {
-                res.json({error: response.message})
-            }
-            else {
-                res.status(200)
-                res.sendFile(response)
-            }
+        const response = await plansService.getProposalService()
+        if (response instanceof Error) {
+            res.json({error: response.message})
         }
-        catch (err) {
-            res.json({error: "Proposta ainda não foi gerada"})
+        else {
+            res.status(200)
+            res.sendFile(response)
         }
     }
-    
 }
 
 export default new plansController

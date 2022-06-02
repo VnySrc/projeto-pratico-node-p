@@ -20,6 +20,7 @@ class plansServices {
             planos: {},
         }
         let preçoTotal: number = 0
+        
         try {
             beneficiarios.forEach(beneficiary => {
                 let plan = plansTable.find(plan => plan.registro === beneficiary.registro)
@@ -43,29 +44,26 @@ class plansServices {
                  proposta.beneficiarios.push(beneficiary)
                  proposta.planos  = {plano: beneficiary.plano}
                  preçoTotal  += beneficiary.preço
-                 console.log(beneficiary)
             });
-                proposta.planos = {plano: proposta.planos["plano"], preço_total: preçoTotal}
-            // criar proposta.json
-            fs.writeFileSync(path.resolve("./src/tables/proposta.json"), JSON.stringify(proposta), {encoding: "utf8",})
-            const propostaPath = fs.readFileSync(path.resolve("./src/tables/proposta.json"), "utf-8")
-            const propostaTable = JSON.parse(propostaPath)
-    
+            proposta.planos = {plano: proposta.planos["plano"], preço_total: preçoTotal}
+            proposta.planos["quantidade"] = quantity
+           
+            fs.writeFileSync(path.resolve("./src/tables/proposta.json"), JSON.stringify(proposta), {encoding: "utf8",})// criar proposta.json
+
             proposta.beneficiarios.forEach(beneficiary => {
-                ++totalBeneficiaries
                 delete beneficiary.registro
             });
-
+            
             return {proposta , quantity}
         }
         catch {
-            return new Error("Ocorreu eum erro no servidor, porfavor tente novamente")
+            return new Error("Plano Invalido!")
         }
     }
     
-    getProposalService () {
+    async getProposalService () {
         try {
-            const proposalPath =  fs.readFileSync(path.resolve("./src/tables/proposta.json"), "utf-8")
+            const proposalPath =path.resolve("./src/tables/proposta.json")
             if (proposalPath) {
                 return proposalPath
             }
@@ -76,7 +74,6 @@ class plansServices {
         catch {
             return new Error("Ocorreu eum erro no servidor, porfavor tente novamente")
         }
-      
     }
 }
 
