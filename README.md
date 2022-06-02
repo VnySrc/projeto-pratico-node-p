@@ -2,14 +2,17 @@
 
 **Projeto pratico desenvolvido para teste de conhecimento** 
 
-*Instalação*<br/>
+*Instalação*
 
-**SERVER**<br/>
+*SERVER*
+**No diretorio server :**
+***npm install***
+***criar arquivo .env***
+PORT=3001
 
-***npm install***<br/>
-***criar arquivo .env***<br/>
-PORT=3001<br/>
+*CLIENT*
+**Na pasta cliente**
+***npm install***
+***npm run dev***
+***acessar 127.0.0.1:3000***
 
-**CLIENT**<br/>
-***npm install***<br/>
-***npm run dev***<br/>
