@@ -11,7 +11,6 @@ let totalBeneficiaries:number = 0
 
 class plansServices {
     constructor () {
-
     }
     async applyBusinessRulesService (quantity: number, beneficiarios: beneficiariesType[]) {
            
