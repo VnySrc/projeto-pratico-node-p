@@ -1,15 +1,15 @@
-# teste-pratico
+# Teste-Pratico
 
-** Projeto pratico desenvolvido para teste de conhecimento ** 
+**Projeto pratico desenvolvido para teste de conhecimento** 
 
-*Instalação*
+*Instalação*<br/>
 
-**SERVER**
+**SERVER**<br/>
 
-***npm install***
-***criar arquivo .env***
-PORT=3001
+***npm install***<br/>
+***criar arquivo .env***<br/>
+PORT=3001<br/>
 
-**CLIENT**
-***npm install***
-***npm run dev***
+**CLIENT**<br/>
+***npm install***<br/>
+***npm run dev***<br/>
