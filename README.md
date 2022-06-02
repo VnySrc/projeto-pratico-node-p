@@ -23,3 +23,5 @@ PORT=3001 <br />
 *Rotas API*
 **Documentação da API** <br />
 **https://documenter.getpostman.com/view/20194488/Uz5Gmb72**
+
+*Tabelas planos, preços, proposta na pasta server/src/tables*
