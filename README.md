@@ -10,9 +10,11 @@
 ***criar arquivo .env*** <br />
 PORT=3001 <br />
 
+***Inicializar Server: npm run dev*** <br />
+
 *CLIENT* <br />
 **Na pasta cliente** <br />
 ***npm install*** <br />
-***npm run dev*** <br />
+***Inicializar CLient: npm run dev*** <br />
 ***acessar 127.0.0.1:3000*** <br />
 
