@@ -1,1 +1,1 @@
-{"beneficiarios":[{"nome":"Marcos Vinycius","idade":18,"registro":"reg6","plano":"Bitix Customer Plano 6","preço":65},{"nome":"Marcos Vinycius","idade":17,"registro":"reg2","plano":"Bitix Customer Plano 2","preço":30}],"planos":{"plano":"Bitix Customer Plano 2","preço_total":95,"quantidade":3}}
+{"beneficiarios":[{"nome":"Marcos Vinycius","idade":10,"registro":"reg1","plano":"Bitix Customer Plano 1","preço":10},{"nome":"teste","idade":6,"registro":"reg3","plano":"Bitix Customer Plano 3","preço":30}],"planos":{"plano":"Bitix Customer Plano 3","preço_total":40,"quantidade":3}}

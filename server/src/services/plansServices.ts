@@ -33,7 +33,7 @@ class plansServices {
                    beneficiary.plano = plan.nome
                    beneficiary.preço = price.faixa1
                 }
-                if ( beneficiary.idade > 17, beneficiary.idade <= 40) {
+                if ( beneficiary.idade > 17 && beneficiary.idade <= 40) {
                     beneficiary.plano = plan.nome
                     beneficiary.preço = price.faixa2
                  }
