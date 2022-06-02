@@ -1,7 +1,7 @@
 # Teste-Pratico
 
 **Projeto pratico desenvolvido para teste de conhecimento** <br />
-**Ultilizado NodeJs, ReactJs, Typescript** <br />
+**Ultilizado NodeJs, ReactJs, Typescript** <br /><br />
 *Instalação* <br />
 
 *SERVER* <br />
